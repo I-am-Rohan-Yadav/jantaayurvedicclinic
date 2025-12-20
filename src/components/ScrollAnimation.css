@@ -1,0 +1,72 @@
+/* Base scroll animation styles */
+.scroll-animation {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animation.visible {
+  opacity: 1;
+}
+
+/* Fade up animation */
+.scroll-animation.fade-up {
+  transform: translateY(30px);
+}
+
+.scroll-animation.fade-up.visible {
+  transform: translateY(0);
+}
+
+/* Fade down animation */
+.scroll-animation.fade-down {
+  transform: translateY(-30px);
+}
+
+.scroll-animation.fade-down.visible {
+  transform: translateY(0);
+}
+
+/* Fade left animation */
+.scroll-animation.fade-left {
+  transform: translateX(30px);
+}
+
+.scroll-animation.fade-left.visible {
+  transform: translateX(0);
+}
+
+/* Fade right animation */
+.scroll-animation.fade-right {
+  transform: translateX(-30px);
+}
+
+.scroll-animation.fade-right.visible {
+  transform: translateX(0);
+}
+
+/* Fade in (no movement) */
+.scroll-animation.fade-in {
+  transform: scale(0.95);
+}
+
+.scroll-animation.fade-in.visible {
+  transform: scale(1);
+}
+
+/* Zoom in animation */
+.scroll-animation.zoom-in {
+  transform: scale(0.8);
+}
+
+.scroll-animation.zoom-in.visible {
+  transform: scale(1);
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-animation {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}

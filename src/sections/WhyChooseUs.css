@@ -1,0 +1,53 @@
+.why-choose-us-section {
+  position: relative;
+  background: url('/images/why-choose-us-bg.jpg') center center/cover no-repeat;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.why-choose-us-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(46, 125, 50, 0.85); /* dark green overlay */
+  z-index: 0;
+}
+
+.content-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.why-choose-us-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #a8d5a3; /* lighter green for contrast */
+}
+
+.why-choose-us-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e6f0d9; /* soft off-white */
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .why-choose-us-section {
+    padding: 40px 15px;
+  }
+
+  .why-choose-us-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .why-choose-us-section p {
+    font-size: 1rem;
+  }
+}

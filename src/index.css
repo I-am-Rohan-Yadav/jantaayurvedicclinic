@@ -1,0 +1,49 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* BODY */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f9f9f6; /* off-white */
+  color: #213547;
+}
+
+/* ROOT APP */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BUTTON RESET */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* CONTAINER (USE EVERYWHERE) */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
