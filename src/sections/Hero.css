@@ -2,6 +2,7 @@
   height: 70vh;
   position: relative;
   overflow: hidden;
+  padding-top: 106px; /* Account for fixed header */
 }
 
 .slider-container {
@@ -111,6 +112,7 @@
 @media (max-width: 768px) {
   .hero {
     height: 60vh;
+    padding-top: 120px; /* Adjust for smaller header on mobile */
   }
 
   .hero h1 {
@@ -132,5 +134,19 @@
 
   .hero-overlay {
     padding: 40px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 100px; /* Adjust for even smaller header */
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero-text {
+    font-size: 14px;
   }
 }

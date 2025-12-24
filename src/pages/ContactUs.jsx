@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ContactUs.css";
 import contactBanner from "../assets/contactus.png";
 
@@ -11,7 +12,7 @@ function ContactUs() {
         style={{ backgroundImage: `url(${contactBanner})` }}
       >
         <h1>Contact Us</h1>
-        <p><a href="/">Home</a> &gt; Contact Us</p>
+        <p><Link to="/">Home</Link> &gt; Contact Us</p>
       </div>
 
       {/* Content section */}
@@ -48,7 +49,7 @@ function ContactUs() {
               <div className="icon mail-icon"></div>
               <div>
                 <h3>Mail Us</h3>
-                <p>janta1ayurvedic@gmail.com</p>
+                <p>janta2ayurvedic@gmail.com</p>
               </div>
             </div>
 

@@ -65,9 +65,22 @@ header.scrolled .main-header {
   transition: background 0.3s ease;
 }
 
-.logo h2 {
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
   color: #2e7d32;
   font-size: 20px;
+  margin: 0;
 }
 
 /* NAV MENU */
@@ -206,6 +219,38 @@ header.scrolled .main-header {
   padding: 8px 14px;
   border-radius: 4px;
   font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.appointment-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: left 0.5s ease;
+}
+
+.appointment-btn:hover {
+  background: #388e3c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(46, 125, 50, 0.4);
+  color: #fff;
+}
+
+.appointment-btn:hover::before {
+  left: 100%;
+}
+
+.appointment-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.3);
+  background: #1b5e20;
 }
 
 /* HAMBURGER */

@@ -8,13 +8,30 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
-  padding: 50px 20px;
+  padding: 15px 20px;
+}
+
+.footer-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.footer-logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-column h3,
 .footer-column h4 {
   margin-bottom: 15px;
   color: #ffffff;
+}
+
+.footer-logo-title h3 {
+  margin-bottom: 0;
 }
 
 .footer-column p {
@@ -29,21 +46,142 @@
 
 .footer-column ul li {
   margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer-column ul li:hover {
+  transform: translateX(8px);
 }
 
 .footer-column ul li a {
   color: #e8f0e6;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+  padding-left: 0;
+}
+
+.footer-column ul li a::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-weight: bold;
 }
 
 .footer-column ul li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  padding-left: 20px;
+}
+
+.footer-column ul li a:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+/* Footer Contact Items */
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.footer-contact-item p {
+  margin: 0;
+  flex: 1;
+}
+
+.footer-contact-item a {
+  color: #e8f0e6;
+  text-decoration: none;
+}
+
+.footer-contact-item a:hover {
   text-decoration: underline;
+}
+
+/* Footer Icons */
+.footer-icon {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-icon::before {
+  font-size: 18px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon.phone-icon::before {
+  content: "📞";
+}
+
+.footer-icon.mail-icon::before {
+  content: "📧";
+}
+
+.footer-icon.location-icon::before {
+  content: "📍";
+}
+
+/* Hover Effects for Footer Icons */
+.footer-contact-item:hover .footer-icon {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+  animation: footer-jump 0.6s ease;
+}
+
+.footer-contact-item:hover .footer-icon::before {
+  animation: footer-rotate-shake 0.6s ease;
+}
+
+@keyframes footer-jump {
+  0%, 100% {
+    transform: translateY(0) scale(1.1);
+  }
+  25% {
+    transform: translateY(-6px) scale(1.15);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.2);
+  }
+  75% {
+    transform: translateY(-4px) scale(1.15);
+  }
+}
+
+@keyframes footer-rotate-shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
 }
 
 /* BOTTOM BAR */
 .footer-bottom {
   background-color: #1b5e20;
   text-align: center;
-  padding: 15px 10px;
+  padding: 5px;
   font-size: 13px;
 }

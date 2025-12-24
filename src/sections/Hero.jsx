@@ -10,21 +10,45 @@ function Hero() {
   const slides = [
     {
       image: image1,
-      title: "ACTIVE AYU LIFE",
-      subtitle: "NABH Accredited Holistic Care",
-      text: "Cashless treatment for CGHS | CAPF | Air India cardholders"
+      title: "Rooted in nature. Backed by care.",
+      subtitle: "Personalised healing for long-term wellness.",
+    //   text: "Cashless treatment for CGHS | CAPF | Air India cardholders"
     },
     {
       image: image2,
-      title: "TRADITIONAL HEALING",
-      subtitle: "Ancient Wisdom, Modern Care",
-      text: "Experience authentic Ayurvedic treatments"
+      title: "Press pause on the noise.",
+      subtitle: "A therapy designed to relax your thoughts, not just your body.",
+    //   text: "Experience authentic Ayurvedic treatments"
     },
     {
       image: image3,
-      title: "WELLNESS JOURNEY",
-      subtitle: "Your Path to Natural Health",
-      text: "Personalized treatment plans for holistic wellness"
+      title: "Heal smarter. Move freely.",
+      subtitle: "Where natural healing meets modern physiotherapy.",
+    //   text: "Personalized treatment plans for holistic wellness"
+    },
+    {
+      image: image1,
+      title: "Let calm flow in.",
+      subtitle: "A gentle oil stream that quiets the mind and resets your system.",
+    //   text: "Cashless treatment for CGHS | CAPF | Air India cardholders"
+    },
+    {
+      image: image2,
+      title: "Feel held. Feel healed.",
+      subtitle: "Abhyanga for calm muscles, clear mind, and better circulation.",
+    //   text: "Experience authentic Ayurvedic treatments"
+    },
+    {
+      image: image3,
+      title: "More than a massage.",
+      subtitle: "Abhyanga therapy to nourish, detox, and deeply restore.",
+    //   text: "Personalized treatment plans for holistic wellness"
+    },
+    {
+      image: image3,
+      title: "Open. Clear. Reset.",
+      subtitle: "Herbal nasal therapy for everyday head wellness.",
+    //   text: "Personalized treatment plans for holistic wellness"
     }
   ];
 
